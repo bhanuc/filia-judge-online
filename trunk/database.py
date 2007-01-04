@@ -285,11 +285,13 @@ def add_problems():
 #   contest.insert(name=unicode("My First Contest",'utf-8'),start=current,end = end_time,status=0)
 
 if __name__ == "__main__":
-    #add_problems()
-    add_problems_contest()
-    #build_problem()
+    build_submit()
+    build_user()
+    build_article()
+    build_contest()
+    build_problem()
     build_relation()
-    #problem = Base('database/problem').open()
-    #problem.insert(problem_id = "1001",title=unicode("A+B Problem","utf-8"),time_limit=1000,memory_limit=10000)
-    #build_contest()
-    pass
+    problem = Base('database/problem').open()
+    if len(problem)<=0:
+        print "add some problems"
+        add_problems()
