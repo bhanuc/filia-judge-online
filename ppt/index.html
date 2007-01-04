@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Filia's Judge Online</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="2006 12 15" />
+<meta name="author" content="Tao Fei" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+
+<link rel="stylesheet" href="ui/i18n/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/i18n/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/i18n/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/i18n/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- style sheet links -->
+<!--
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+-->
+<style type="text/css">
+pre {
+font-size:20px;
+}
+</style>
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"></div>
+<div id="footer">
+<h1>2006 12 14</h1>
+<h2>Filia's Judge Online</h2>
+</div>
+
+</div>
+
+
+<div class="presentation">
+
+<!--Page 0-->
+<div class="slide">
+<h1>Filia's Judge Online <br/><span style="padding-left:50%;font-size:20px;">Design and Implement</span></h1>
+<h3>Tao Fei</h3>
+<h4>CSE, SEU</h4>
+<div class="handout">
+Page 0 Cover
+</div>
+</div>
+
+<!--Page 1-->
+<div class="slide">
+<h1>What is Filia's Judge Online</h1>
+<ul class="incremental">
+<li>An Online Judge System 
+	<ul>
+	<li>Browse Problem Sets</li>
+	<li>Submit Your Ansert (current supprot C/C++ Java)</li>
+	<li>Discuss in the Forum </li>
+	<li>Contest System (Under Development) </li>
+	</ul>
+</li>
+<li>Written In Pure Python </li>
+<li>Publish Under GPL 2</li>
+</ul>
+<div class="handout">
+Page 1
+</div>
+</div>
+
+<!--Page 2-->
+<div class="slide">
+<h1>The Develop Team</h1>
+<ul>
+<li>Tao Fei (Filia.Tao@gmail.com)</li>
+<li>Chen Jian (jamaze@126.com)</li>
+</ul>
+<div class="handout">
+Page 2
+</div>
+</div>
+
+<!--Page 3-->
+<div class="slide">
+<h1>The Design Of the Site</h1>
+<ul class="incremental">
+<li>MVC
+	<ul>
+	<li>Database Driven  </li>
+	<li>Python as Controler</li>
+	<li>Template Based</li>
+	</ul>
+</li>
+<li>Obey Web Standard  (XHTML 1.0)</li>
+<li>Rich Client (using Javascript)</li>
+<li>Cross-Platform</li>
+</ul>
+<div class="handout">
+Page 3
+</div>
+</div>
+
+<!--Page 4-->
+<div class="slide">
+<h1>Why Python ?</h1>
+<ul class="incremental">
+<li><p style="font-size:20px;">
+	On using "not mainstream" languages:<br/>
+	Adrian: "Our response was: With PHP people learn that because they want to get jobs.<br/>
+			 With Java they learn that because they take computer science courses. <br/>
+			 With Python you learn it because you love it. Because you want to experience the beauty."<br/>
+			 I'm sure it's the same way for Ruby. <br/>
+			 If I'm hiring a Python programmer the chances are that the person is good."<br/>
+	David: "I totally agree."
+	</p>
+</li>
+<li>Lots of Useful Open Source Library</li>
+<li>Enjoy the pleasure of fast development (compare with PHP,JAVA)</li>
+<li>Also read &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.linuxjournal.com/article/3882"><i>Why Python ?</i></a> &nbsp;&nbsp;&nbsp;&nbsp;   by Eric Raymond on linuxjournal</li>
+</ul>
+<div class="handout">
+Page 4 
+</div>
+</div>
+
+<!--Page 5-->
+<div class="slide">
+<h1>Using Open Source Software  </h1>
+<h2>We used some open source tools in this project.</h2>
+<ul class="incremental">
+<!--li>Don't Create the Whell again</li-->
+<li>Karrigell <br/>
+Karrigell is a flexible and powerful Python web framework.<br/>
+</li>
+<li>Mollio: An HTML/CSS Template<br/>
+Mollio let me get rid of WYSIWYG Editor, and produce tidy and beautiful HTML.<br/>
+</li>
+<li>
+prototype.js and Really Easy Field Validation with prototype.js
+</li>
+</ul>
+<div class="handout">
+Page 5
+</div>
+</div>
+
+<!--Page 6-->
+<div class="slide">
+<h1>Karrigell  </h1>
+It provide <br/>
+<ul class="incremental">
+<li>A built-in web server </li>
+<li>A 100% Python database, buzhug</li>
+<li>Cheetah as it's Template Engineer</li>
+</ul>
+<div class="handout">
+Page 6
+</div>
+</div>
+
+<!--Page 7-->
+<div class="slide">
+<h1>Karrigell  II</h1>
+<ul class="incremental">
+<li>Various Ways to Write Your Code
+	<ul>
+	<li>Pure Python</li>
+	<li>Python in HTML</li>
+	<li>HTML in Python</li>
+	<li>Karrigell Server Page</li>
+	</ul>
+</li>
+<li>
+	Powerful and easy-to-use session management
+</li>
+<li>Wondeful Debug Page <br/>
+<a href="img/debug.png" target="_blank">
+	<img style="height:150px" alt="Karrigell Debug Page" src="img/debug.png"></img>
+</a>
+</li>
+</ul>
+<div class="handout">
+Page 7
+</div>
+</div>
+
+<!--Page 8-->
+<div class="slide">
+<h1>Pure Python Database</h1>
+<ul>
+<li>buzhug<br/>
+a pure-Python database engine, using a Pythonic, no-SQL syntax
+</li>
+<li>Example:just using id for select <br/>
+<pre>
+submit = Base('database/submit').open()
+record = submit[int(_sid)] #_sid is the argument passed by the url 
+</pre>
+</li>
+<li>Using Regular Expression For Select:<br/>
+<pre>
+pattern = re.compile('^[AEIOUY]')
+result_set = user.select(['user_id'],'p.match(user_id)',p=pattern)
+</pre>
+</li>
+</ul>
+<div class="handout">
+Page 8
+</div>
+</div>
+
+
+<!--Page 9-->
+<div class="slide">
+<h1>The Magic Of Javascript</h1>
+<ul class="incremental">
+<li>prototype.js <br/>
+Wondeful AJAX Framework  (Part of  Ruby On Rail Framewrok)
+</li>
+<li>Really Easy Field Validation with prototype<br/>
+I have use this script for many projects. Wondeful Work. Good Design <br/>
+<a href="http://127.0.0.1:8080/JOL/register" target="_blank">See it</a>
+</li>
+</ul>
+<div class="handout">
+Page 9
+</div>
+</div>
+
+<!--Page 10-->
+<div class="slide">
+<h1>The Judge Kernel</h1>
+<ul >
+<li>Complier<br/>
+	GCC /G++  javac 
+</li>
+<li>Python as glue
+	<ul>
+	<li>Read code from database, save to file.</li>
+	<li>Calling the complier to complie the source file. (os.system(cmd)) </li>
+	<li>Excute the excutable file, redirect the stdin ,stdout,stderr.</li>
+	<li>Compare output file with the standerd out file . (using filecmp module)</li>
+	<li>Save the result back to the database</li>
+	</ul>
+</li>
+<li>Run as Daemon
+</li>
+</ul>
+<div class="handout">
+Page 10
+</div>
+</div>
+
+<!--Page 11-->
+<div class="slide">
+<h1>Problems</h1>
+<ul>
+<li>Kernel
+	<ul>
+		<li>Security Check is a little week.</li>
+		<li>Time And Memory Calculate Need to be improved</li>
+	</ul>
+</li>
+<li>Web
+	<ul>
+		<li>Can Be More Friendly</li>
+		<li>Contest System needs improvement</li>
+		<li>No Site Search yet</li>
+	</ul>
+</li>
+<li>
+	Document such as FAQs need to be added
+</li>
+</ul>
+<div class="handout">
+Page 11
+</div>
+</div>
+
+<!--Page 12-->
+<div class="slide">
+<h1><span style="display:none">The End</span>&nbsp;</h1>
+<div class="slidecontent">
+<center>
+<p style="font-size:40px">
+		That's All. <br/><br/><br/>
+Thanks for Your Attention.
+</p>
+</center>
+</div>
+<div class="handout">
+Page 12 The End
+</div>
+</div>
+
+
+</div>
+
+</body>
+</html>
